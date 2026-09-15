@@ -6,8 +6,8 @@ class Solution:
             if nums[i] == 1:
                 current_count +=1
             else:
-                max_count = max(max_count, current_count)
+                max_count = max(current_count, max_count)
                 current_count = 0
-        return   max(current_count, max_count)
+        return max(max_count, current_count)
 
         
